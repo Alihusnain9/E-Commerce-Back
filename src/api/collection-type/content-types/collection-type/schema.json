@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_types",
+  "info": {
+    "singularName": "collection-type",
+    "pluralName": "collection-types",
+    "displayName": "Collection Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "AnyImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

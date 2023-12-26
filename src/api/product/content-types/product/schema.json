@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PName": {
+      "type": "string",
+      "required": true
+    },
+    "PDescription": {
+      "type": "text",
+      "required": false
+    },
+    "PImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "UName": {
+      "type": "uid",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "All",
+        "Laptops",
+        "Headphones ",
+        "Food",
+        "Electronics"
+      ]
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "brand": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
